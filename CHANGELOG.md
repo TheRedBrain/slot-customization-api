@@ -1,3 +1,7 @@
+# 2.2.0
+
+- added API for empty slot tooltips
+
 # 2.1.0
 
 - updated to 1.21.1

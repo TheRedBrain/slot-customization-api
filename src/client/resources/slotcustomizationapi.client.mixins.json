@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "com.github.theredbrain.slotcustomizationapi.mixin.client",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "gui.screen.ingame.HandledScreenMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

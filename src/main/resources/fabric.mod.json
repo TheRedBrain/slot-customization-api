@@ -3,7 +3,7 @@
 	"id": "slotcustomizationapi",
 	"version": "${version}",
 	"name": "Slot Customization API",
-	"description": "A small API for mods to dynamically change inventory slot positions and enable/disable them.",
+	"description": "A small API for mods to dynamically modify inventory slots.",
 	"authors": [
 		"TheRedBrain"
 	],
@@ -19,7 +19,11 @@
 		]
 	},
 	"mixins": [
-		"slotcustomizationapi.mixins.json"
+		"slotcustomizationapi.mixins.json",
+		{
+			"config": "slotcustomizationapi.client.mixins.json",
+			"environment": "client"
+		}
 	],
 	"depends": {
 		"minecraft": "${minecraft_version}",
