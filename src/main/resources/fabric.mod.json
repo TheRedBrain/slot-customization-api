@@ -16,6 +16,9 @@
 	"entrypoints": {
 		"main": [
 			"com.github.theredbrain.slotcustomizationapi.SlotCustomizationAPI"
+		],
+		"client": [
+			"com.github.theredbrain.slotcustomizationapi.SlotCustomizationAPIClient"
 		]
 	},
 	"mixins": [
@@ -28,6 +31,7 @@
 	"depends": {
 		"minecraft": "${minecraft_version}",
 		"fabricloader": ">=${loader_version}",
-		"fabric-api": "*"
+		"fabric-api": "*",
+		"fzzy_config": ">=${fzzy_config_version}"
 	}
 }

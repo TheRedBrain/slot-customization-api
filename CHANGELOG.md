@@ -1,3 +1,8 @@
+# 2.3.0
+
+- added dependency on Fzzy Config
+- added client config option to disable empty slot tooltips
+
 # 2.2.0
 
 - added API for empty slot tooltips

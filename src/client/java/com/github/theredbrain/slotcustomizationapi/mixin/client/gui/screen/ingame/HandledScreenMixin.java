@@ -1,5 +1,6 @@
 package com.github.theredbrain.slotcustomizationapi.mixin.client.gui.screen.ingame;
 
+import com.github.theredbrain.slotcustomizationapi.SlotCustomizationAPIClient;
 import com.github.theredbrain.slotcustomizationapi.api.SlotCustomization;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.Screen;
@@ -32,7 +33,7 @@ public abstract class HandledScreenMixin<T extends ScreenHandler> extends Screen
 	@Inject(method = "drawMouseoverTooltip", at = @At("RETURN"))
 	protected void drawMouseoverTooltip(DrawContext context, int x, int y, CallbackInfo ci) {
 		if (this.handler.getCursorStack().isEmpty() && this.focusedSlot != null && !this.focusedSlot.hasStack()) {
-			if (this.focusedSlot instanceof SlotCustomization slotWithTooltip) {
+			if (SlotCustomizationAPIClient.CLIENT_CONFIG.show_slot_tooltips.get() && this.focusedSlot instanceof SlotCustomization slotWithTooltip) {
 				List<Text> list = slotWithTooltip.slotcustomizationapi$getSlotTooltipText();
 				if (!list.isEmpty()) {
 					context.drawTooltip(this.textRenderer, list, Optional.empty(), x, y);
