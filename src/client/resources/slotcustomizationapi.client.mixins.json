@@ -3,7 +3,7 @@
   "package": "com.github.theredbrain.slotcustomizationapi.mixin.client",
   "compatibilityLevel": "JAVA_21",
   "client": [
-    "gui.screen.ingame.HandledScreenMixin"
+    "gui.screen.ingame.AbstractContainerScreenMixin"
   ],
   "injectors": {
     "defaultRequire": 1

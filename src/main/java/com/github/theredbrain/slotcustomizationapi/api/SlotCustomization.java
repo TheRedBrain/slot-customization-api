@@ -1,8 +1,7 @@
 package com.github.theredbrain.slotcustomizationapi.api;
 
-import net.minecraft.text.Text;
-
 import java.util.List;
+import net.minecraft.network.chat.Component;
 
 public interface SlotCustomization {
 	void slotcustomizationapi$setX(int x);
@@ -13,7 +12,7 @@ public interface SlotCustomization {
 
 	boolean slotcustomizationapi$getDisabledOverride();
 
-	void slotcustomizationapi$setSlotTooltipText(List<Text> newSlotTooltipTextList);
+	void slotcustomizationapi$setSlotTooltipText(List<Component> newSlotTooltipTextList);
 
-	List<Text> slotcustomizationapi$getSlotTooltipText();
+	List<Component> slotcustomizationapi$getSlotTooltipText();
 }
