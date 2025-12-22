@@ -1,3 +1,10 @@
+# 3.1.0
+
+- updated to Minecraft 1.21.11
+- migrated to MojangMappings
+- added dependency on Fzzy Config
+- added client config option to disable empty slot tooltips
+
 # 3.0.0
 
 - updated to 1.21.10
