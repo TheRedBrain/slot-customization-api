@@ -1,5 +1,6 @@
 package com.github.theredbrain.slotcustomizationapi.mixin.client.gui.screen.ingame;
 
+import com.github.theredbrain.slotcustomizationapi.SlotCustomizationAPIClient;
 import com.github.theredbrain.slotcustomizationapi.api.SlotCustomization;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.Screen;
@@ -36,7 +37,7 @@ public abstract class AbstractContainerScreenMixin<T extends AbstractContainerMe
 	@Inject(method = "renderTooltip", at = @At("RETURN"))
 	protected void slotcustomizationapi$renderTooltip(GuiGraphics context, int x, int y, CallbackInfo ci) {
 		if (this.menu.getCarried().isEmpty() && this.hoveredSlot != null && !this.hoveredSlot.hasItem()) {
-			if (this.hoveredSlot instanceof SlotCustomization slotWithTooltip) {
+			if (SlotCustomizationAPIClient.CLIENT_CONFIG.show_slot_tooltips.get() && this.hoveredSlot instanceof SlotCustomization slotWithTooltip) {
 				List<Component> list = slotWithTooltip.slotcustomizationapi$getSlotTooltipText();
 				if (!list.isEmpty()) {
 					context.setTooltipForNextFrame(this.font, list, Optional.empty(), x, y);

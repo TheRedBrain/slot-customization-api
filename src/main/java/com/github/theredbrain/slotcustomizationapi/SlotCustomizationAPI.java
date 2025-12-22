@@ -2,7 +2,7 @@ package com.github.theredbrain.slotcustomizationapi;
 
 import net.fabricmc.api.ModInitializer;
 
-import net.minecraft.util.Identifier;
+import net.minecraft.resources.ResourceLocation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -15,8 +15,8 @@ public class SlotCustomizationAPI implements ModInitializer {
 		LOGGER.info("Slots were customized!");
 	}
 
-	public static Identifier identifier(String path) {
-		return Identifier.of(MOD_ID, path);
+	public static ResourceLocation identifier(String path) {
+		return ResourceLocation.fromNamespaceAndPath(MOD_ID, path);
 	}
 
 }
