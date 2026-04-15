@@ -1,3 +1,7 @@
+# 4.0.1
+
+- fixed compatibility with 26.1.x versions
+
 # 4.0.0
 
 - updated to Minecraft 26.1
