@@ -1,4 +1,4 @@
-package com.github.theredbrain.slotcustomizationapi.mixin;
+package com.github.theredbrain.slotcustomizationapi.mixin.world.inventory;
 
 import com.github.theredbrain.slotcustomizationapi.api.SlotCustomization;
 import com.google.common.collect.Lists;
