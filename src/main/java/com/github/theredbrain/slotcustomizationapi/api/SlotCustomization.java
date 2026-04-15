@@ -1,7 +1,8 @@
 package com.github.theredbrain.slotcustomizationapi.api;
 
-import java.util.List;
 import net.minecraft.network.chat.Component;
+
+import java.util.List;
 
 public interface SlotCustomization {
 	void slotcustomizationapi$setX(int x);
