@@ -1,3 +1,9 @@
+# 4.1.0
+
+## Additions
+
+- equipment slots in the creative inventory can now show their "empty slot tooltip"
+
 # 4.0.1
 
 - fixed compatibility with 26.1.x versions
